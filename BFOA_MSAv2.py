@@ -6,7 +6,7 @@ poblacion = []
 path = "../BFOA/multiFasta.fasta"
 numeroDeBacterias = 5
 numRandomBacteria = 1
-iteraciones = 50
+iteraciones = 30
 tumbo = 1                                              #numero de gaps a insertar 
 nado = 3
 chemio = chemiotaxis()
@@ -63,6 +63,7 @@ def tumboNado_iterativo(bacteria, tumbo, pasos=5):
         # else:
         #     print(f"  No hay mejora, manteniendo fitness: {bacteria.fitness}")
     return bacteria  # Retornar la bacteria mejorada
+
 
 for i in range(numeroDeBacterias):                                            #poblacion inicial
     poblacion.append(bacteria(path))
